@@ -16,14 +16,14 @@ public class MainActivity extends AppCompatActivity {
         btnR0C0.setOnClickListener(v -> {
 
             btnR0C0.setText("X");
-            btnR0C0.setBackgroundColor(getColor(R.color.red));
+            btnR0C0.setBackgroundColor(getColor(R.color.green));
             btnR0C0.setCompoundDrawables(getDrawable(R.drawable.twotone_houseboat_24),null,null,null);
 
         });
 
         btnR0C0.setOnLongClickListener(v -> {
             btnR0C0.setText("O");
-            btnR0C0.setBackgroundColor(getColor(R.color.green));
+            btnR0C0.setBackgroundColor(getColor(R.color.red));
             return true;
         });
 
