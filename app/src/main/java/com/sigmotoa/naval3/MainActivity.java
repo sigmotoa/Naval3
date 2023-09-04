@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btnR0C0 = findViewById(R.id.button1);
+        Button btnR0C3 = findViewById(R.id.button4);
 
         btnR0C0.setOnClickListener(v -> {
 
@@ -28,6 +29,14 @@ public class MainActivity extends AppCompatActivity {
             return true;
         });
 
+
+        btnR0C3.setOnClickListener(v -> {
+
+            btnR0C3.setText("X");
+            btnR0C3.setBackgroundColor(getColor(R.color.green));
+            btnR0C3.setCompoundDrawables(getDrawable(R.drawable.twotone_houseboat_24),null,null,null);
+
+        });
 
     }
 }
